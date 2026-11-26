@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade | Clínica Odontológica · Samambaia Norte</title>
+<meta name="description" content="Como o site da Clínica Odontológica de Samambaia Norte trata os seus dados.">
+<meta name="theme-color" content="#0B2545">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B2545'/%3E%3Cpath d='M32 17c4-4 11-5 15-1 4 4 4 11 2 17-1 3-2 5-2 8-1 7-2 11-4 11s-3-6-5-11c-1-3-5-3-6 0-2 5-3 11-5 11s-3-4-4-11c0-3-1-5-2-8-2-6-2-13 2-17 4-4 11-3 15 1z' fill='none' stroke='%238CC8F0' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+<style>
+  .doc{max-width:760px;margin:0 auto;padding:130px clamp(20px,5vw,48px) 100px}
+  .doc h1{font:650 clamp(2.2rem,4vw,3.2rem)/1.05 var(--f-disp);letter-spacing:-.02em;color:var(--navy);margin:0 0 14px}
+  .doc h2{font:650 1.35rem/1.25 var(--f-disp);color:var(--navy);margin:40px 0 10px}
+  .doc p,.doc li{color:var(--ink-2)}
+  .doc a{color:var(--navy);font-weight:600}
+  .doc .back{display:inline-flex;align-items:center;gap:8px;margin-bottom:28px;font-weight:600;text-decoration:none}
+  .doc .back svg{width:18px;height:18px;transform:rotate(180deg)}
+</style>
+<script src="assets/js/dados.js?v=4"></script>
+</head>
+<body>
+<svg width="0" height="0" class="defs" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+</svg>
+<main class="doc" id="main">
+  <a class="back" href="index.html"><svg aria-hidden="true"><use href="#i-arrow"/></svg>Voltar para o site</a>
+  <p class="kicker">Privacidade</p>
+  <h1>Política de privacidade</h1>
+  <p>Esta página explica, em palavras simples, como este site trata os seus dados, de acordo com a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
+
+  <h2>O que este site coleta</h2>
+  <p>Este site não tem cadastro, não guarda formulários e não usa cookies próprios de rastreamento. Ele serve para apresentar a clínica e facilitar o contato.</p>
+
+  <h2>Quando você fala com a gente pelo WhatsApp</h2>
+  <p>Os botões de agendamento e o formulário apenas montam uma mensagem e abrem o WhatsApp no seu aparelho. Nada do que você escreve fica salvo neste site. A conversa acontece no WhatsApp, e os dados que você enviar por lá (como nome e tratamento de interesse) são usados só para responder e organizar o seu atendimento.</p>
+
+  <h2>Serviços de terceiros</h2>
+  <ul>
+    <li><b>Google Maps:</b> o mapa da página de contato é carregado pelo Google, que pode usar cookies próprios conforme a política de privacidade dele.</li>
+    <li><b>Google Fonts:</b> as fontes do site são carregadas pelos servidores do Google.</li>
+    <li><b>WhatsApp:</b> as mensagens seguem as regras de privacidade do próprio WhatsApp.</li>
+  </ul>
+
+  <h2>Seus direitos</h2>
+  <p>Você pode pedir a qualquer momento para saber quais dados seus a clínica tem, corrigir ou apagar essas informações. Basta falar com a recepção pelo telefone <a data-tel href="tel:+556134585444"><span data-c="telefone">(61) 3458-5444</span></a> ou pelo WhatsApp.</p>
+
+  <h2>Imagens do site</h2>
+  <p>As fotos usadas neste site são ilustrativas, vindas de banco de imagens. Elas não mostram a clínica, a equipe nem pacientes.</p>
+
+  <h2>Atualizações</h2>
+  <p>Esta política pode mudar para acompanhar novas funções do site. A versão em vigor é sempre a desta página.</p>
+</main>
+<script>
+  (function () {
+    var C = window.CLINICA || {};
+    if (C.telefone) {
+      document.querySelectorAll('[data-c="telefone"]').forEach(function (el) { el.textContent = C.telefone; });
+      document.querySelectorAll('[data-tel]').forEach(function (a) { a.href = 'tel:+55' + String(C.telefone).replace(/\D/g, ''); });
+    }
+  })();
+</script>
+</body>
+</html>
